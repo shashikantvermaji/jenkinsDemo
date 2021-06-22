@@ -52,7 +52,7 @@ pipeline {
         stage('Deploy our image') { 
              steps { 
  
-            sh 'mvn run:tomcat7'
+            sh 'mvn tomcat7:run'
                  } 
              }
          } 
