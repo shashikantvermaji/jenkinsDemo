@@ -27,17 +27,7 @@ pipeline {
                     }
             
          } 
-          stage('cobertura') { 
-             steps {  
-                 sh 'mvn clean cobertura:cobertura'
-                    }
-           }
-           
-           stage('testNG_Reprt') { 
-             steps {  
-                 sh 'mvn site'
-                    }
-           }
+         
          
          stage('war created') { 
              steps {  
