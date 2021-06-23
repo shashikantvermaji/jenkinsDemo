@@ -13,7 +13,7 @@ pipeline {
             }
             
          } 
-         
+         /*
       
          stage('SonarQube analysis') {
             steps {
@@ -27,7 +27,7 @@ pipeline {
                 waitForQualityGate abortPipeline: true
             }
         }
-
+*/
 
          
          
