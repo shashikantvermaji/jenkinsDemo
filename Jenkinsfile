@@ -35,7 +35,13 @@ pipeline {
                     }
             
          } 
-         
+         stage('Nexus artifact uplaod')
+{
+steps
+{
+sh 'nexusArtifactUploader artifacts: [[artifactId: 'java', classifier: '', file: 'target/java.war', type: 'war']], credentialsId: 'nexus', groupId: 'my', nexusUrl: '18.117.179.51:5051/', nexusVersion: 'nexus3', protocol: 'http', repository: 'JavaMavenRepo', version: '0.0.1''
+}
+}
           
          
  
