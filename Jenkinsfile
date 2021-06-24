@@ -17,13 +17,13 @@ pipeline {
          
         stage('mvn clean') { 
              steps {  
-                 sh 'mvn clean'
+                 bat 'mvn clean'
                     }
             
          } 
          stage('compile') { 
              steps {  
-                 sh 'mvn compile'
+                 bat 'mvn compile'
                     }
             
          } 
@@ -31,12 +31,11 @@ pipeline {
          
          stage('war created') { 
              steps {  
-                 sh 'mvn install'
+                 bat 'mvn install'
                     }
             
          } 
-         stage('Nexus artifact uplaod')
-{
+         
 
           
          
@@ -44,7 +43,7 @@ pipeline {
         stage('Deploy our image') { 
              steps { 
  
-            sh 'mvn tomcat7:run'
+            bat 'mvn tomcat7:run'
                  } 
              }
          } 
