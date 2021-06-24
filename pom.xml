@@ -136,26 +136,7 @@
         </dependencies>
 
       </plugin>
-	     <plugin>
-      <groupId>com.upplication.maven.plugins</groupId>
-      <artifactId>s3-download-maven-plugin</artifactId>
-      <version>1.0.2-SNAPSHOT</version>
-      <executions>
-        <execution>
-            <phase>your phase</phase>
-            <goals>
-                <goal>s3-download</goal>
-            </goals>
-            <configuration>
-                <bucketName>s3-artifacts-demo123</bucketName>
-                <!-- if you provide no source the whole bucket will be downloaded -->
-                <destination>/target/</destination>
-                <accessKey>AKIAYHXBAZZN2ZNQQX4X</accessKey>
-                <secretKey>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</secretKey>
-            </configuration>
-        </execution>
-      </executions>
-    </plugin>
+	     
      
      
 
