@@ -35,13 +35,7 @@ pipeline {
                     }
             
          } 
-         stage('S3 artifact upload') { 
-             steps {  
-             s3Upload consoleLogLevel: 'INFO', dontSetBuildResultOnFailure: false, dontWaitForConcurrentBuildCompletion: false, entries: [[bucket: 's3-artifacts-demo123', excludedFile: 'JavaDemoApp/Artifacts', flatten: false, gzipFiles: false, keepForever: false, managedArtifacts: false, noUploadOnFailure: false, selectedRegion: 'us-east-2', showDirectlyInBrowser: false, sourceFile: '**/target/*.war', storageClass: 'STANDARD', uploadFromSlave: false, useServerSideEncryption: false]], pluginFailureResultConstraint: 'FAILURE', profileName: 's3-artifacts-demo', userMetadata: []
-                    }
-            
-         } 
-         
+        
 
           
          
