@@ -1,9 +1,5 @@
 pipeline {  
-    environment { 
-        //registry = "shashikantvermaji/java"  
-        //registryCredential = 'docker'  
-        //dockerImage = '' 
-                }
+   
     agent any 
         stages {  
                 stage('Cloning our Git') 
