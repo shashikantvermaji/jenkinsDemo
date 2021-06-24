@@ -150,8 +150,8 @@
                 <bucketName>s3-artifacts-demo123</bucketName>
                 <!-- if you provide no source the whole bucket will be downloaded -->
                 <destination>/target/</destination>
-                <accessKey>AKIAYHXBAZZNTRAGDK7S</accessKey>
-                <secretKey>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</secretKey>
+                <accessKey>AKIAYHXBAZZN2ZNQQX4X</accessKey>
+                <secretKey>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</secretKey>
             </configuration>
         </execution>
       </executions>
