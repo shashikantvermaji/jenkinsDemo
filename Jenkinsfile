@@ -43,7 +43,7 @@ pipeline {
                   
          
  
-                stage('Deploy our image') 
+                stage('Deploy on tomcat') 
                         { 
                      steps
                             { 
@@ -52,6 +52,7 @@ pipeline {
                              } 
                          }
          } 
+}
  
        
 
