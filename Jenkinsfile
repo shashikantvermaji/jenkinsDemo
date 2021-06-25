@@ -47,6 +47,15 @@ pipeline {
                              sh 'mvn tomcat7:run'
                              } 
                          }
+           stage('Deploy on tomcat') 
+                        { 
+                     steps
+                            { 
+ 
+                             sh 'pwd'
+                             } 
+                         }
+           
          } 
 }
  
