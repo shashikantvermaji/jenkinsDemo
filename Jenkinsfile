@@ -44,17 +44,10 @@ pipeline {
                      steps
                             { 
  
-                             sh 'mvn tomcat7:run'
+                             sh 'mvn tomcat7:run-war'
                              } 
                          }
-           stage('Deploy on tomcat') 
-                        { 
-                     steps
-                            { 
- 
-                             sh 'pwd'
-                             } 
-                         }
+        
            
          } 
 }
